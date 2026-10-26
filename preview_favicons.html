@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilih Favicon — Portfolio Rafli Ainun Prasetya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link id="dynamicFavicon" rel="icon" type="image/svg+xml" href="Asset/favicon/opsi-3/favicon.svg">
+  <style>
+    :root {
+      --bg-dark: #070B14;
+      --bg-card: rgba(16, 25, 44, 0.75);
+      --border-color: rgba(255, 255, 255, 0.1);
+      --accent-emerald: #10B981;
+      --accent-cyan: #06B6D4;
+      --text-main: #F1F5F9;
+      --text-muted: #94A3B8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .header {
+      max-width: 1200px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #10B981 0%, #06B6D4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    .header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .badge-bar {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      margin-top: 14px;
+    }
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10B981;
+      box-shadow: 0 0 10px #10B981;
+      display: inline-block;
+    }
+    .grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 28px;
+    }
+    .card {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+    .card:hover {
+      border-color: rgba(16, 185, 129, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+    }
+    .card-header {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .card-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-cyan);
+      font-weight: 700;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .card-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .preview-stage {
+      background: #04070E;
+      border-radius: 14px;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(16, 185, 129, 0.15);
+    }
+    .preview-stage img {
+      width: 120px;
+      height: 120px;
+      filter: drop-shadow(0 10px 25px rgba(16, 185, 129, 0.25));
+    }
+    .sizes-box {
+      background: #0A1122;
+      border-radius: 10px;
+      padding: 14px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .size-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #64748b;
+    }
+    .size-col img {
+      image-rendering: -webkit-optimize-contrast;
+    }
+    /* Tab simulation */
+    .tab-simulation {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .tab-sim-label {
+      font-size: 0.8rem;
+      color: #64748b;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .sim-browser {
+      background: #0d1527;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .sim-tab-row {
+      display: flex;
+      align-items: flex-end;
+      padding: 8px 12px 0;
+      gap: 6px;
+    }
+    .sim-tab {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border-radius: 6px 6px 0 0;
+      font-size: 12px;
+      font-weight: 500;
+      width: 220px;
+    }
+    .sim-tab img {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+    .sim-tab span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .sim-tab-dark {
+      background: #141f38;
+      color: #f1f5f9;
+      border-top: 2px solid #10b981;
+    }
+    .sim-tab-light {
+      background: #f1f5f9;
+      color: #0f172a;
+      border-top: 2px solid #059669;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: auto;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .btn-test {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    .btn-test:hover {
+      background: rgba(16, 185, 129, 0.25);
+      border-color: #10b981;
+    }
+    .btn-code {
+      background: #0f172a;
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+    .btn-code:hover {
+      background: #1e293b;
+      border-color: #38bdf8;
+    }
+    .code-preview {
+      display: none;
+      background: #03060c;
+      padding: 12px;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: #94a3b8;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    .code-preview.active {
+      display: block;
+    }
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #10b981;
+      color: #04101A;
+      font-weight: 700;
+      padding: 12px 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 100;
+      font-size: 0.9rem;
+    }
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Katalog Pilihan Favicon Portofolio</h1>
+    <p>Semua format aset (<code style="color:#38bdf8;">.svg</code>, <code style="color:#38bdf8;">.ico</code>, <code style="color:#38bdf8;">.png</code>, <code style="color:#38bdf8;">apple-touch-icon</code>, <code style="color:#38bdf8;">webmanifest</code>) sudah digenerate lengkap.</p>
+    <div class="badge-bar">
+      <span class="pulse-dot"></span>
+      <span>Klik tombol "Coba di Tab Ini" untuk melihat langsung ikon tab berganti!</span>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <!-- OPSI 1 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-tag">Opsi 1 — Folder: Asset/favicon/opsi-1</span>
+        <h2 class="card-title">&lt;RP /&gt; Tech Badge</h2>
+        <p class="card-desc">Sangat identik dengan lambang logo di navbar Anda (&lt;RP /&gt;). Inisial lengkap <strong>RP</strong> diapit kurung siku kode bernuansa neon emerald & cyan.</p>
+      </div>
+
+      <div class="preview-stage">
+        <img src="Asset/favicon/opsi-1/apple-touch-icon.png" alt="Opsi 1 Icon">
+      </div>
+
+      <div class="sizes-box">
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-1/favicon-16x16.png" width="16" height="16" alt="16px">
+          <span>16px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-1/favicon-32x32.png" width="24" height="24" alt="24px">
+          <span>24px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-1/favicon-32x32.png" width="32" height="32" alt="32px">
+          <span>32px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-1/apple-touch-icon.png" width="48" height="48" alt="48px">
+          <span>48px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-1/apple-touch-icon.png" width="64" height="64" alt="64px">
+          <span>64px</span>
+        </div>
+      </div>
+
+      <div class="tab-simulation">
+        <div class="tab-sim-label">Simulasi Tab Browser:</div>
+        <div class="sim-browser">
+          <div class="sim-tab-row" style="background:#080d1a;">
+            <div class="sim-tab sim-tab-dark">
+              <img src="Asset/favicon/opsi-1/favicon-32x32.png" alt="tab icon">
+              <span>Rafli Ainun Prasetya | Full...</span>
+            </div>
+          </div>
+        </div>
+        <div class="sim-browser">
+          <div class="sim-tab-row" style="background:#cbd5e1;">
+            <div class="sim-tab sim-tab-light">
+              <img src="Asset/favicon/opsi-1/favicon-32x32.png" alt="tab icon">
+              <span>Rafli Ainun Prasetya | Full...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn btn-test" onclick="setTabFavicon('Asset/favicon/opsi-1/favicon.svg', 'Opsi 1: <RP/>')">
+          ⚡ Coba Ikon Ini di Tab Browser Sekarang
+        </button>
+        <button class="btn btn-code" onclick="toggleCode('code-1', this)">
+          📋 Lihat & Salin Kode HTML
+        </button>
+        <div id="code-1" class="code-preview">&lt;!-- Favicon &amp; App Icons (Opsi 1) --&gt;
+&lt;link rel="icon" type="image/svg+xml" href="Asset/favicon/opsi-1/favicon.svg"&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="Asset/favicon/opsi-1/favicon-32x32.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="Asset/favicon/opsi-1/favicon-16x16.png"&gt;
+&lt;link rel="apple-touch-icon" sizes="180x180" href="Asset/favicon/opsi-1/apple-touch-icon.png"&gt;
+&lt;link rel="manifest" href="Asset/favicon/opsi-1/site.webmanifest"&gt;
+&lt;meta name="theme-color" content="#070B14"&gt;</div>
+      </div>
+    </div>
+
+    <!-- OPSI 2 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-tag">Opsi 2 — Folder: Asset/favicon/opsi-2</span>
+        <h2 class="card-title">Bold Monogram "RP" + Pulse Dot</h2>
+        <p class="card-desc">Tipografi monogram <strong>RP</strong> tebal dengan aksen titik indikator hijau berdenyut (*live status*) seperti pada hero section portofolio Anda.</p>
+      </div>
+
+      <div class="preview-stage">
+        <img src="Asset/favicon/opsi-2/apple-touch-icon.png" alt="Opsi 2 Icon">
+      </div>
+
+      <div class="sizes-box">
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-2/favicon-16x16.png" width="16" height="16" alt="16px">
+          <span>16px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-2/favicon-32x32.png" width="24" height="24" alt="24px">
+          <span>24px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-2/favicon-32x32.png" width="32" height="32" alt="32px">
+          <span>32px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-2/apple-touch-icon.png" width="48" height="48" alt="48px">
+          <span>48px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-2/apple-touch-icon.png" width="64" height="64" alt="64px">
+          <span>64px</span>
+        </div>
+      </div>
+
+      <div class="tab-simulation">
+        <div class="tab-sim-label">Simulasi Tab Browser:</div>
+        <div class="sim-browser">
+          <div class="sim-tab-row" style="background:#080d1a;">
+            <div class="sim-tab sim-tab-dark">
+              <img src="Asset/favicon/opsi-2/favicon-32x32.png" alt="tab icon">
+              <span>Rafli Ainun Prasetya | Full...</span>
+            </div>
+          </div>
+        </div>
+        <div class="sim-browser">
+          <div class="sim-tab-row" style="background:#cbd5e1;">
+            <div class="sim-tab sim-tab-light">
+              <img src="Asset/favicon/opsi-2/favicon-32x32.png" alt="tab icon">
+              <span>Rafli Ainun Prasetya | Full...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn btn-test" onclick="setTabFavicon('Asset/favicon/opsi-2/favicon.svg', 'Opsi 2: RP Monogram')">
+          ⚡ Coba Ikon Ini di Tab Browser Sekarang
+        </button>
+        <button class="btn btn-code" onclick="toggleCode('code-2', this)">
+          📋 Lihat & Salin Kode HTML
+        </button>
+        <div id="code-2" class="code-preview">&lt;!-- Favicon &amp; App Icons (Opsi 2) --&gt;
+&lt;link rel="icon" type="image/svg+xml" href="Asset/favicon/opsi-2/favicon.svg"&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="Asset/favicon/opsi-2/favicon-32x32.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="Asset/favicon/opsi-2/favicon-16x16.png"&gt;
+&lt;link rel="apple-touch-icon" sizes="180x180" href="Asset/favicon/opsi-2/apple-touch-icon.png"&gt;
+&lt;link rel="manifest" href="Asset/favicon/opsi-2/site.webmanifest"&gt;
+&lt;meta name="theme-color" content="#070B14"&gt;</div>
+      </div>
+    </div>
+
+    <!-- OPSI 3 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-tag">Opsi 3 — Folder: Asset/favicon/opsi-3</span>
+        <h2 class="card-title">&lt; R &gt; Developer Terminal</h2>
+        <p class="card-desc">Simetri sempurna dan sangat tajam. Menampilkan inisial <strong>R</strong> diapit sepasang kurung sudut pengembang <strong>&lt; &gt;</strong> dengan gradasi emerald-cyan.</p>
+      </div>
+
+      <div class="preview-stage">
+        <img src="Asset/favicon/opsi-3/apple-touch-icon.png" alt="Opsi 3 Icon">
+      </div>
+
+      <div class="sizes-box">
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-3/favicon-16x16.png" width="16" height="16" alt="16px">
+          <span>16px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-3/favicon-32x32.png" width="24" height="24" alt="24px">
+          <span>24px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-3/favicon-32x32.png" width="32" height="32" alt="32px">
+          <span>32px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-3/apple-touch-icon.png" width="48" height="48" alt="48px">
+          <span>48px</span>
+        </div>
+        <div class="size-col">
+          <img src="Asset/favicon/opsi-3/apple-touch-icon.png" width="64" height="64" alt="64px">
+          <span>64px</span>
+        </div>
+      </div>
+
+      <div class="tab-simulation">
+        <div class="tab-sim-label">Simulasi Tab Browser:</div>
+        <div class="sim-browser">
+          <div class="sim-tab-row" style="background:#080d1a;">
+            <div class="sim-tab sim-tab-dark">
+              <img src="Asset/favicon/opsi-3/favicon-32x32.png" alt="tab icon">
+              <span>Rafli Ainun Prasetya | Full...</span>
+            </div>
+          </div>
+        </div>
+        <div class="sim-browser">
+          <div class="sim-tab-row" style="background:#cbd5e1;">
+            <div class="sim-tab sim-tab-light">
+              <img src="Asset/favicon/opsi-3/favicon-32x32.png" alt="tab icon">
+              <span>Rafli Ainun Prasetya | Full...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn btn-test" onclick="setTabFavicon('Asset/favicon/opsi-3/favicon.svg', 'Opsi 3: < R >')">
+          ⚡ Coba Ikon Ini di Tab Browser Sekarang
+        </button>
+        <button class="btn btn-code" onclick="toggleCode('code-3', this)">
+          📋 Lihat & Salin Kode HTML
+        </button>
+        <div id="code-3" class="code-preview">&lt;!-- Favicon &amp; App Icons (Opsi 3) --&gt;
+&lt;link rel="icon" type="image/svg+xml" href="Asset/favicon/opsi-3/favicon.svg"&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="Asset/favicon/opsi-3/favicon-32x32.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="Asset/favicon/opsi-3/favicon-16x16.png"&gt;
+&lt;link rel="apple-touch-icon" sizes="180x180" href="Asset/favicon/opsi-3/apple-touch-icon.png"&gt;
+&lt;link rel="manifest" href="Asset/favicon/opsi-3/site.webmanifest"&gt;
+&lt;meta name="theme-color" content="#070B14"&gt;</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="toast" class="toast">Kode berhasil disalin!</div>
+
+  <script>
+    function setTabFavicon(src, name) {
+      const link = document.getElementById('dynamicFavicon');
+      link.href = src + '?t=' + Date.now();
+      showToast('Favicon tab diganti ke: ' + name);
+    }
+
+    function toggleCode(id, btn) {
+      const elem = document.getElementById(id);
+      if (elem.classList.contains('active')) {
+        // copy text
+        navigator.clipboard.writeText(elem.innerText).then(() => {
+          showToast('Kode HTML berhasil disalin ke clipboard!');
+        });
+      } else {
+        elem.classList.add('active');
+        btn.innerText = '📋 Salin Kode HTML ke Clipboard';
+        navigator.clipboard.writeText(elem.innerText).then(() => {
+          showToast('Kode HTML siap ditempel!');
+        });
+      }
+    }
+
+    function showToast(text) {
+      const toast = document.getElementById('toast');
+      toast.innerText = text;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
