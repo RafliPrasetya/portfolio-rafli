@@ -2369,6 +2369,10 @@ body {
   line-height: 1.5;
 }
 
+.lightbox-caption:empty {
+  display: none;
+}
+
 .lightbox-close {
   position: absolute;
   top: 1.5rem;
@@ -2524,6 +2528,18 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -2556,7 +2572,7 @@ body {
 
   .nav-links {
     position: fixed;
-    top: 5rem;
+    top: 4.8rem;
     left: 1rem;
     right: 1rem;
     background: var(--bg-surface-elevated);
@@ -2578,10 +2594,21 @@ body {
     pointer-events: auto;
   }
 
+  .section {
+    padding: 5rem 0;
+  }
+
+  .hero-section {
+    padding-top: 7rem;
+    padding-bottom: 3.5rem;
+    min-height: auto;
+  }
+
   .hero-stats {
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    padding: 1.25rem 1.4rem;
   }
 
   .stat-separator {
@@ -2592,11 +2619,264 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
   .cert-header {
     flex-direction: column;
   }
 
+  .cert-actions .btn-cert {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .project-card-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
   .contact-card {
-    padding: 2rem 1.25rem;
+    padding: 2.2rem 1.4rem;
+  }
+
+  .modal-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .modal-gallery-main {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 0.9rem;
+  }
+
+  .brand-logo {
+    font-size: 1rem;
+    gap: 0.45rem;
+  }
+
+  .logo-symbol {
+    font-size: 0.825rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  .hero-section {
+    padding-top: 6.2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.7rem, 6.5vw, 2.3rem);
+    line-height: 1.2;
+    margin-bottom: 1.1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.6rem;
+  }
+
+  .hero-cta-group {
+    gap: 0.75rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-cta-group .btn-icon {
+    width: 100%;
+    height: 42px;
+  }
+
+  .hero-stats {
+    padding: 1rem;
+    gap: 0.85rem;
+  }
+
+  .stat-number {
+    font-size: 1.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+  }
+
+  .profile-photo-wrapper {
+    height: 290px;
+  }
+
+  .floating-badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.65rem;
+  }
+
+  .badge-top-right {
+    top: 0.65rem;
+    right: 0.65rem;
+  }
+
+  .badge-bottom-left {
+    bottom: 0.65rem;
+    left: 0.65rem;
+  }
+
+  .profile-meta-footer {
+    padding: 1rem 1.15rem;
+  }
+
+  .profile-name {
+    font-size: 1.05rem;
+  }
+
+  .project-filters {
+    gap: 0.45rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-btn {
+    font-size: 0.775rem;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .project-card,
+  .about-card,
+  .skill-category-card,
+  .cert-card,
+  .leadership-card,
+  .timeline-item {
+    padding: 1.4rem 1.15rem;
+  }
+
+  .project-title {
+    font-size: 1.15rem;
+  }
+
+  .lead-header {
+    gap: 0.85rem;
+  }
+
+  .lead-logo-wrapper {
+    width: 46px;
+    height: 46px;
+    padding: 4px;
+  }
+
+  .lead-role {
+    font-size: 1.05rem;
+  }
+
+  .toeic-score-container {
+    gap: 0.35rem;
+  }
+
+  .score-val {
+    font-size: 1rem;
+  }
+
+  .contact-card {
+    padding: 1.75rem 1rem;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-item {
+    padding: 0.9rem 1rem;
+    gap: 0.8rem;
+  }
+
+  .contact-value {
+    font-size: 0.85rem;
+    word-break: break-all;
+  }
+
+  .contact-action-box {
+    padding: 1.5rem 1.15rem;
+  }
+
+  .modal-overlay {
+    padding: 0.75rem;
+  }
+
+  .modal-container {
+    width: 100%;
+    padding: 1.25rem 0.95rem;
+    max-height: 90vh;
+  }
+
+  .modal-gallery-main {
+    height: 190px;
+  }
+
+  .gallery-fullscreen-btn,
+  .gallery-counter-badge {
+    font-size: 0.68rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .gallery-nav-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+
+  .modal-thumbnails-strip {
+    padding: 0.6rem 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .thumb-item {
+    width: 58px;
+    height: 40px;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .toast-notification {
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    justify-content: center;
   }
 }

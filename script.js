@@ -262,41 +262,13 @@ document.addEventListener('DOMContentLoaded', () => {
       period: 'Maret 2026 – Agustus 2026',
       summary: 'An automated smart rice dispensing and monitoring ecosystem engineered for LAZISMU Rogojampi. Integrates electronic KTP (E-KTP) RFID identification with Raspberry Pi hardware to ensure transparent, quota-regulated social aid distribution to registered mustahik.',
       images: [
-        {
-          src: 'Asset/projek/atm%20beras/Screenshot%202026-07-15%20235116.png',
-          title: 'Landing Page Portal LAZISMU Rogojampi',
-          caption: 'Portal publik edukatif & transparan untuk masyarakat dan donatur program ATM Beras LAZISMU.'
-        },
-        {
-          src: 'Asset/projek/atm%20beras/Screenshot%202026-07-08%20044344.png',
-          title: 'Antarmuka Mesin Kiosk ATM Beras (Raspberry Pi)',
-          caption: 'Tampilan antarmuka fisik mesin otomatis yang memandu penerima menempelkan kartu identitas E-KTP RFID.'
-        },
-        {
-          src: 'Asset/projek/atm%20beras/Screenshot%202026-07-10%20202259.png',
-          title: 'Verifikasi Data Mustahik & Riwayat Pengambilan',
-          caption: 'Popup validasi kuota tersisa (5.000 gram), lokasi mesin ATM, jadwal giliran, dan log transaksi penarikan.'
-        },
-        {
-          src: 'Asset/projek/atm%20beras/Screenshot%202026-07-07%20071839.png',
-          title: 'Dashboard Administrasi & Monitoring Mesin',
-          caption: 'Panel kontrol pengurus LAZISMU untuk memantau status mesin ATM, kuota harian, dan audit penyaluran.'
-        },
-        {
-          src: 'Asset/projek/atm%20beras/Screenshot%202026-07-07%20074829.png',
-          title: 'Manajemen Data Penerima Manfaat & Kuota',
-          caption: 'Modul database mustahik terdaftar, nomor identitas RFID UID, dan pengaturan alokasi gramasi.'
-        },
-        {
-          src: 'Asset/projek/atm%20beras/Screenshot%202026-07-07%20031248.png',
-          title: 'Status Konektivitas & Telemetri Hardware',
-          caption: 'Audit log status koneksi jaringan antara cloud Laravel server dengan mikrokontroler Raspberry Pi.'
-        },
-        {
-          src: 'Asset/projek/atm%20beras/Screenshot%202026-07-15%20235318.png',
-          title: 'Informasi Jadwal & Lokasi Penyaluran Beras',
-          caption: 'Katalog lokasi dan jadwal mesin ATM Beras aktif untuk kemudahan akses mustahik di Rogojampi.'
-        }
+        'Asset/projek/atm%20beras/Screenshot%202026-07-15%20235116.png',
+        'Asset/projek/atm%20beras/Screenshot%202026-07-08%20044344.png',
+        'Asset/projek/atm%20beras/Screenshot%202026-07-10%20202259.png',
+        'Asset/projek/atm%20beras/Screenshot%202026-07-07%20071839.png',
+        'Asset/projek/atm%20beras/Screenshot%202026-07-07%20074829.png',
+        'Asset/projek/atm%20beras/Screenshot%202026-07-07%20031248.png',
+        'Asset/projek/atm%20beras/Screenshot%202026-07-15%20235318.png'
       ],
       features: [
         'Developed full web ecosystem using Laravel and MySQL covering public informational landing page and administrator management dashboard.',
@@ -313,41 +285,13 @@ document.addEventListener('DOMContentLoaded', () => {
       period: 'Juli 2025 – Agustus 2025',
       summary: 'Centralized flood monitoring platform that collects IoT sensor readings from river dams and subdistrict waterways to provide early hazard mitigation and data-driven disaster administration.',
       images: [
-        {
-          src: 'Asset/projek/banjir/Screenshot%202025-08-02%20130501.png',
-          title: 'Dashboard Monitoring Telemetri Sensor & Peringatan Dini',
-          caption: 'Visualisasi grafik Chart.js 7 hari terakhir (suhu, kelembapan, ketinggian air) dengan status peringatan bahaya banjir.'
-        },
-        {
-          src: 'Asset/projek/banjir/Screenshot%202025-08-04%20142533.png',
-          title: 'Modul Manajemen Pengaduan Bencana Warga',
-          caption: 'Sistem pelaporan banjir per kecamatan dan bendungan (Kali A/B/C) disertai bukti foto dan respon cepat BPBD.'
-        },
-        {
-          src: 'Asset/projek/banjir/Screenshot%202025-07-31%20153054.png',
-          title: 'Portal Informasi Publik Status Siaga Air Sungai',
-          caption: 'Tampilan antarmuka publik untuk pemantauan debit air sungai secara aktual demi kesiapsiagaan warga sekitar DAS.'
-        },
-        {
-          src: 'Asset/projek/banjir/Screenshot%202025-08-02%20115638.png',
-          title: 'Monitoring & Pemetaan Titik Sensor per Bendungan',
-          caption: 'Rekam data ketinggian air otomatis yang dikirimkan perangkat sensor lapangan via RESTful API.'
-        },
-        {
-          src: 'Asset/projek/banjir/Screenshot%202025-08-02%20212036.png',
-          title: 'Log Telemetri Sensor Real-time & Level Waspada',
-          caption: 'Tabel data sensor otomatis terupdate secara berkala tanpa perlu merefresh halaman web.'
-        },
-        {
-          src: 'Asset/projek/banjir/Screenshot%202025-12-09%20194951.png',
-          title: 'Rekapitulasi Laporan Bencana & Debit Air Tahunan',
-          caption: 'Laporan analitik historis ketinggian air untuk evaluasi berkala pencegahan bencana banjir.'
-        },
-        {
-          src: 'Asset/projek/banjir/Screenshot%202025-12-10%20001823.png',
-          title: 'Konfigurasi Ambang Batas Sensor & Manajemen Admin',
-          caption: 'Pengaturan parameter level Aman, Waspada, dan Bahaya untuk memicu otomatisasi peringatan dini.'
-        }
+        'Asset/projek/banjir/Screenshot%202025-08-02%20130501.png',
+        'Asset/projek/banjir/Screenshot%202025-08-04%20142533.png',
+        'Asset/projek/banjir/Screenshot%202025-07-31%20153054.png',
+        'Asset/projek/banjir/Screenshot%202025-08-02%20115638.png',
+        'Asset/projek/banjir/Screenshot%202025-08-02%20212036.png',
+        'Asset/projek/banjir/Screenshot%202025-12-09%20194951.png',
+        'Asset/projek/banjir/Screenshot%202025-12-10%20001823.png'
       ],
       features: [
         'Developed centralized web portal using PHP, Laravel, Blade, MySQL, and JavaScript.',
@@ -364,26 +308,9 @@ document.addEventListener('DOMContentLoaded', () => {
       period: 'Juli 2025',
       summary: 'Production travel agency website engineered to showcase destinations, promote exclusive vacation packages, and convert organic website visitors into direct customer inquiries.',
       images: [
-        {
-          src: 'Asset/projek/travel/Screenshot%202026-10-23%20222326.png',
-          title: 'Hero Section Platform Jayla Travel',
-          caption: 'Landing page modern "Perjalanan Bisnis Lebih Mudah Untuk Semua" dengan tombol konversi dan video showcase.'
-        },
-        {
-          src: 'Asset/projek/travel/Screenshot%202026-10-23%20222253.png',
-          title: 'Katalog Portofolio & Destinasi Wisata Banyuwangi',
-          caption: 'Filter interaktif pilihan destinasi (De Djawatan, Pulau Merah, Wisata Alam) dengan tata letak visual responsif.'
-        },
-        {
-          src: 'Asset/projek/travel/Screenshot%202026-10-23%20222314.png',
-          title: 'Profil Wonderful Banyuwangi & Paket Layanan',
-          caption: 'Section keunggulan layanan, paket wisata fleksibel, pemandu berpengalaman, dan integrasi video Wonderful Banyuwangi.'
-        },
-        {
-          src: 'Asset/projek/Screenshot%202025-07-21%20163637.png',
-          title: 'Banner Promosi Desktop Beresolusi Tinggi',
-          caption: 'Tampilan banner beresolusi tinggi "Temukan Pesona Banyuwangi Bersama Travel Agent Terpercaya Anda".'
-        }
+        'Asset/projek/travel/Screenshot%202026-10-23%20222326.png',
+        'Asset/projek/travel/Screenshot%202026-10-23%20222253.png',
+        'Asset/projek/travel/Screenshot%202026-10-23%20222314.png'
       ],
       features: [
         'Customized dynamic landing page layout aligning visual elements with travel brand guidelines.',
@@ -400,21 +327,9 @@ document.addEventListener('DOMContentLoaded', () => {
       period: 'September 2025',
       summary: 'Intelligent expert system utilizing Case-Based Reasoning (CBR) to diagnose fish diseases through similarity calculations against historical veterinary cases.',
       images: [
-        {
-          src: 'Asset/projek/fish%20cbr/Screenshot%202025-10-01%20150720.png',
-          title: 'Konfigurasi Domain & cPanel Production (diagnosacbr.com)',
-          caption: 'Penyusunan environment live server, konfigurasi routing domain utama diagnosacbr.com, dan pengaturan direktori /public_html.'
-        },
-        {
-          src: 'Asset/projek/fish%20cbr/Screenshot%202025-10-01%20154644.png',
-          title: 'Manajemen Server & Konfigurasi Hosting cPanel',
-          caption: 'Monitoring detail server, pengaturan IP Address bersama, nameserver DNS, dan alokasi direktori akun sistem pakar.'
-        },
-        {
-          src: 'Asset/projek/fish%20cbr/Screenshot%202025-10-09%20173249.png',
-          title: 'Environment Deployment & Arsitektur Sistem Pakar CBR',
-          caption: 'Konfigurasi dependensi Laravel, migrasi data CSV basis kasus penyakit ikan, serta optimasi stabilitas database.'
-        }
+        'Asset/projek/fish%20cbr/Screenshot%202025-10-01%20150720.png',
+        'Asset/projek/fish%20cbr/Screenshot%202025-10-01%20154644.png',
+        'Asset/projek/fish%20cbr/Screenshot%202025-10-09%20173249.png'
       ],
       features: [
         'Configured complete live hosting environment on cPanel shared hosting (DNS, nameservers, PHP extension compatibility, MySQL).',
@@ -430,46 +345,14 @@ document.addEventListener('DOMContentLoaded', () => {
       period: 'Oktober 2025',
       summary: 'Cross-platform mobile application focused on habit tracking, task scheduling, and reminder routines designed for intuitive single-handed operation.',
       images: [
-        {
-          src: 'Asset/projek/remind%20u/SCHEDULE-PHASE%202.png',
-          title: 'Halaman Schedule & Tracker Terapi Pengobatan Intensif',
-          caption: 'Tampilan jadwal pengobatan fase intensif (164 diminum, 2 terlewat), pop-up motivasi "Well Done!", dan daftar obat harian.'
-        },
-        {
-          src: 'Asset/projek/remind%20u/Contents.png',
-          title: 'Halaman Riwayat Obat (Journey)',
-          caption: 'Daftar resep obat (4 KDT RHZE), takaran dosis harian, catatan keluhan efek samping (mual/muntah) untuk evaluasi dokter.'
-        },
-        {
-          src: 'Asset/projek/remind%20u/ANIMASI%20TAKEN.png',
-          title: 'Feedback Animasi Obat Berhasil Diminum (Taken)',
-          caption: 'Umpan balik visual interaktif untuk memberikan rasa pencapaian positif (positive reinforcement) bagi pasien.'
-        },
-        {
-          src: 'Asset/projek/remind%20u/ANIMASI%20SKIPPED.png',
-          title: 'State & Peringatan Jadwal Terlewat (Skipped)',
-          caption: 'Tampilan notifikasi saat pasien melewatkan jadwal minum obat guna mencatat riwayat kepatuhan pengobatan secara akurat.'
-        },
-        {
-          src: 'Asset/projek/remind%20u/JOURNEY.png',
-          title: 'Kalender Kepatuhan & Perjalanan Pengobatan',
-          caption: 'Navigasi kalender harian untuk meninjau kembali rekam jejak konsumsi obat per tanggal.'
-        },
-        {
-          src: 'Asset/projek/remind%20u/JOURNEY%20NO%20DATA.png',
-          title: 'Empty State UI Desain Responsif',
-          caption: 'Desain antarmuka ramah pengguna saat data log harian masih kosong.'
-        },
-        {
-          src: 'Asset/projek/remind%20u/SCHEDULE-INFO.png',
-          title: 'Informasi Detail Fase Pengobatan',
-          caption: 'Panduan tahapan pengobatan klinis dan instruksi konsumsi obat terstruktur.'
-        },
-        {
-          src: 'Asset/projek/remind%20u/TAKEN.png',
-          title: 'Konfirmasi Tindakan & Rekapitulasi Obat',
-          caption: 'Dialog konfirmasi instan setelah pasien menandai obat telah diminum.'
-        }
+        'Asset/projek/remind%20u/SCHEDULE-PHASE%202.png',
+        'Asset/projek/remind%20u/Contents.png',
+        'Asset/projek/remind%20u/ANIMASI%20TAKEN.png',
+        'Asset/projek/remind%20u/ANIMASI%20SKIPPED.png',
+        'Asset/projek/remind%20u/JOURNEY.png',
+        'Asset/projek/remind%20u/JOURNEY%20NO%20DATA.png',
+        'Asset/projek/remind%20u/SCHEDULE-INFO.png',
+        'Asset/projek/remind%20u/TAKEN.png'
       ],
       features: [
         'Developed clean mobile layouts using Flutter and Dart from UI specification blueprints.',
@@ -485,36 +368,12 @@ document.addEventListener('DOMContentLoaded', () => {
       period: 'Februari 2025',
       summary: 'School company profile website developed as part of a lecturer-led community service initiative to expand institutional digital visibility and academic transparency.',
       images: [
-        {
-          src: 'Asset/projek/smk%20nu%20sudirman/1722841695440.jpg',
-          title: 'Dokumentasi Resmi Workshop Digitalisasi Pembelajaran',
-          caption: 'Foto bersama Tim Dosen Pengabdian Masyarakat Politeknik Negeri Banyuwangi dan dewan guru SMK NU Sudirman Rogojampi.'
-        },
-        {
-          src: 'Asset/projek/smk%20nu%20sudirman/1722841695469.jpg',
-          title: 'Pelaksanaan Bimtek & Presentasi Portal Pembelajaran',
-          caption: 'Presentasi materi dan demonstrasi langsung fitur-fitur portal digital sekolah di depan para pengajar.'
-        },
-        {
-          src: 'Asset/projek/smk%20nu%20sudirman/1722841695489.jpg',
-          title: 'Pelatihan Praktik Pengelolaan Konten Website Sekolah',
-          caption: 'Sesi pelatihan intensif bagi operator dan guru dalam mengunggah materi ajar, video, dan pengumuman akademik.'
-        },
-        {
-          src: 'Asset/projek/smk%20nu%20sudirman/1722841695580.jpg',
-          title: 'Pendampingan Teknis Guru & Manajemen Profil Kejuruan',
-          caption: 'Bimbingan teknis interaktif kepada para guru mengenai pemanfaatan sistem manajemen konten berbasis WordPress & Elementor.'
-        },
-        {
-          src: 'Asset/projek/smk%20nu%20sudirman/1722841695627.jpg',
-          title: 'Diskusi Implementasi & Evaluasi Digitalisasi Sekolah',
-          caption: 'Sesi tanya jawab dan evaluasi kemudahan pengelolaan konten oleh tenaga pendidik.'
-        },
-        {
-          src: 'Asset/projek/smk%20nu%20sudirman/1722841695689.jpg',
-          title: 'Serah Terima Sistem & Handover Operasional',
-          caption: 'Penutupan kegiatan pengabdian masyarakat dan penyerahan dokumentasi operasional portal sekolah.'
-        }
+        'Asset/projek/smk%20nu%20sudirman/1722841695440.jpg',
+        'Asset/projek/smk%20nu%20sudirman/1722841695469.jpg',
+        'Asset/projek/smk%20nu%20sudirman/1722841695489.jpg',
+        'Asset/projek/smk%20nu%20sudirman/1722841695580.jpg',
+        'Asset/projek/smk%20nu%20sudirman/1722841695627.jpg',
+        'Asset/projek/smk%20nu%20sudirman/1722841695689.jpg'
       ],
       features: [
         'Architected WordPress profile portal to showcase curriculum, faculty, extracurriculars, and admissions.',
@@ -539,10 +398,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentGalleryImages = [];
   let currentActiveIndex = 0;
 
-  function openLightbox(src, captionText) {
+  function openLightbox(src) {
     if (lightboxModal && lightboxImg) {
       lightboxImg.src = src;
-      if (lightboxCaption) lightboxCaption.textContent = captionText || '';
+      if (lightboxCaption) lightboxCaption.textContent = '';
       lightboxModal.classList.add('active');
     }
   }
@@ -564,7 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderGallery(images) {
     if (!images || images.length === 0) return '';
-    currentGalleryImages = images;
+    currentGalleryImages = images.map(img => typeof img === 'string' ? img : img.src);
     currentActiveIndex = 0;
 
     return `
@@ -574,25 +433,20 @@ document.addEventListener('DOMContentLoaded', () => {
             <span>⛶</span> <span>Perbesar</span>
           </button>
           <div class="gallery-counter-badge" id="galleryCounter">
-            Foto 1 dari ${images.length}
+            Foto 1 dari ${currentGalleryImages.length}
           </div>
-          ${images.length > 1 ? `
+          ${currentGalleryImages.length > 1 ? `
             <button class="gallery-nav-btn gallery-prev" id="galleryPrevBtn" aria-label="Foto Sebelumnya">&#10094;</button>
             <button class="gallery-nav-btn gallery-next" id="galleryNextBtn" aria-label="Foto Selanjutnya">&#10095;</button>
           ` : ''}
-          <img id="galleryMainImg" class="modal-main-img" src="${images[0].src}" alt="${images[0].title}">
+          <img id="galleryMainImg" class="modal-main-img" src="${currentGalleryImages[0]}" alt="Screenshot Dokumentasi Proyek">
         </div>
 
-        <div class="gallery-caption-bar">
-          <div class="gallery-caption-title" id="galleryCapTitle">${images[0].title}</div>
-          <div class="gallery-caption-desc" id="galleryCapDesc">${images[0].caption}</div>
-        </div>
-
-        ${images.length > 1 ? `
+        ${currentGalleryImages.length > 1 ? `
           <div class="modal-thumbnails-strip" id="modalThumbnailsStrip">
-            ${images.map((img, idx) => `
+            ${currentGalleryImages.map((src, idx) => `
               <div class="thumb-item ${idx === 0 ? 'active' : ''}" data-index="${idx}">
-                <img src="${img.src}" alt="${img.title}">
+                <img src="${src}" alt="Screenshot ${idx + 1}">
               </div>
             `).join('')}
           </div>
@@ -603,8 +457,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function setupGalleryEvents() {
     const mainImg = document.getElementById('galleryMainImg');
-    const capTitle = document.getElementById('galleryCapTitle');
-    const capDesc = document.getElementById('galleryCapDesc');
     const counter = document.getElementById('galleryCounter');
     const prevBtn = document.getElementById('galleryPrevBtn');
     const nextBtn = document.getElementById('galleryNextBtn');
@@ -615,19 +467,16 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateActiveImage(idx) {
       if (!currentGalleryImages[idx]) return;
       currentActiveIndex = idx;
-      const data = currentGalleryImages[idx];
+      const src = currentGalleryImages[idx];
 
       if (mainImg) {
         mainImg.style.opacity = '0.3';
         setTimeout(() => {
-          mainImg.src = data.src;
-          mainImg.alt = data.title;
+          mainImg.src = src;
           mainImg.style.opacity = '1';
         }, 120);
       }
 
-      if (capTitle) capTitle.textContent = data.title;
-      if (capDesc) capDesc.textContent = data.caption;
       if (counter) counter.textContent = `Foto ${idx + 1} dari ${currentGalleryImages.length}`;
 
       thumbs.forEach((t, i) => {
@@ -665,16 +514,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (galleryMain) {
       galleryMain.addEventListener('click', () => {
-        const active = currentGalleryImages[currentActiveIndex];
-        if (active) openLightbox(active.src, `${active.title} — ${active.caption}`);
+        const activeSrc = currentGalleryImages[currentActiveIndex];
+        if (activeSrc) openLightbox(activeSrc);
       });
     }
 
     if (fullscreenBtn) {
       fullscreenBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        const active = currentGalleryImages[currentActiveIndex];
-        if (active) openLightbox(active.src, `${active.title} — ${active.caption}`);
+        const activeSrc = currentGalleryImages[currentActiveIndex];
+        if (activeSrc) openLightbox(activeSrc);
       });
     }
   }
